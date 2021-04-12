@@ -70,3 +70,10 @@ body{
     background: #5151CD;
     color: #fff;
 }
+/* Para cmabiar los estilos de los demas elementos dentro de results */
+#results {
+    text-align: center;
+}
+#results p {
+    color: red;
+}
