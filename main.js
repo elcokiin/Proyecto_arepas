@@ -33,9 +33,9 @@ const todo = (matter,amount,num) => {
     operacion = operacion.toFixed(2);
     if (operacion < 1) {
         operacion *= 500;
-        document.write(`La cantidad de <b>${matter}</b> que se necesita para ${resPaquetes} paquetes es <b>${operacion} gramos</b><br>`);    
+        document.write(`La cantidad de <b>${matter}</b> que se necesita para <b>${resPaquetes}</b> paquetes es <b>${operacion} gramos</b><br>`);    
     }
     else{
-        document.write(`La cantidad de <b>${matter}</b> que se necesita para ${resPaquetes} paquetes es <b>${operacion} libras</b><br>`);
+        document.write(`La cantidad de <b>${matter}</b> que se necesita para <b>${resPaquetes}</b> paquetes es <b>${operacion} libras</b><br>`);
     }
 }

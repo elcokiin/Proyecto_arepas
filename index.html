@@ -5,28 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="shortcut icon" href="./img/logo-arepas.jpeg">
     <title>Arepas las más ricas de la región</title>
 </head>
 <body>
-    <header>
-        <div class="container-header">
-            <img src="#" alt="imagen de las arepas">
-            <h1>las arepas más ricas de la region</h1>
-        </div>
-    </header>
-    <main>
-        <div class="container-inputs">
-        <p>
-            <span class="text-before-input one">Que tipo de arepa van a hacer: </span>
-            <input type="text" id="tipo" class="tipo" placeholder="Tipo">
-        </p>
-        <p>
-            <span class="text-before-input two">Cuantos paquetes de arepas van a hacer: </span>
-            <input type="text" id="paquetes" class="paquetes" placeholder="Paquetes">
-        </p>
-        <input type="submit" name="boton" id="boton" class="boton" value="Enviar">
-        </div>
-    </main>   
-    <script src="./main.js"></script> 
+    <div class="container">
+        <header>
+            <div class="container-header">
+                <a href="index.html" class="container-header-title"><h1 class="container-header-title">las arepas más ricas de la region</h1></a>
+                <!-- <img src="./img/logo-arepas.jpeg" alt="imagen de las arepas" width="50px"> -->
+            </div>
+        </header>
+        <main>
+            <div class="container-inputs">
+            <p class="input-arepas tipo-arepas">
+                <span class="text-before-input one">Que tipo de arepa van a hacer: </span>
+                <input type="text" id="tipo" class="input tipo" placeholder="Tipo">
+            </p>
+            <p class="input-arepas tipo-arepas">
+                <span class="text-before-input two">Cuantos paquetes de arepas van a hacer: </span>
+                <input type="text" id="paquetes" class="input paquetes" placeholder="Paquetes">
+            </p>
+            <button id="boton" class="boton">Enviar</button>
+            </div>
+        </main>
+        <div class="script-style">
+            <script src="./main.js"></script> 
+        </div>   
+    </div>
 </body>
 </html>
