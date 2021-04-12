@@ -72,8 +72,14 @@ body{
 }
 /* Para cmabiar los estilos de los demas elementos dentro de results */
 #results {
+    background: #C3C3D3;
     text-align: center;
+    margin: 3% 15%;
+    border-radius: 8px;
+    box-shadow: 30px -16px #BFE4ED;
+    padding: 20px 10px;
 }
 #results p {
-    color: red;
+    color: #080808;
+    font-size: 1.35rem;
 }

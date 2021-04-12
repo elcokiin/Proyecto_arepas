@@ -8,13 +8,13 @@ boton.addEventListener('click', enviar = () => {
     resTipo = tipo.value;
     if (resTipo == 'sal' || resTipo == 'azucar' || resTipo == 'Sal' || resTipo == 'Azucar' || resTipo == 1 || resTipo == 2) {
         if (resPaquetes > 0) {
-            todo('maiz', 35, 60);
-            todo('mantequilla', 2.5, 60);
+            todo('maiz', 35, 60, 'results-one');
+            todo('mantequilla', 2.5, 60, 'results-two');
             if (resTipo == 'sal' || resTipo == 'Sal' || resTipo == 1) {
-                todo('sal', 0.5, 35);
+                todo('sal', 0.5, 35, 'results-three');
             }
             else {
-                todo('azucar', 2, 25);
+                todo('azucar', 2, 25, 'results-three');
             }
         }
         else {
@@ -26,10 +26,10 @@ boton.addEventListener('click', enviar = () => {
     }
 })
 
-const todo = (matter, amount, num) => {
+const todo = (matter, amount, num, where) => {
     resPaquetes = parseFloat(paquetes.value);
     operacion = amount * resPaquetes / num;
-    const resultsObj = document.getElementById("results");
+    const resultsObj = document.getElementById(where);
     // operacion = Math.round(operacion);
     operacion = operacion.toFixed(2);
     if (operacion < 1) {
