@@ -10,6 +10,9 @@ boton.addEventListener('click', enviar = () => {
         if (resPaquetes > 0) {
             todo('maiz', 35, 60, 'results-one');
             todo('mantequilla', 2.5, 60, 'results-two');
+            const resultsObj = document.getElementById('results-four');
+            operacionQ = resPaquetes * 5;
+            resultsObj.innerHTML = `<p>Y se necesitan <b>${operacionQ}</b> tajas de <b>queso</b> para <b>${resPaquetes}</b> paquetes.</b><br></p>`
             if (resTipo == 'sal' || resTipo == 'Sal' || resTipo == 1) {
                 todo('sal', 0.5, 35, 'results-three');
             }
