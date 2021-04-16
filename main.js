@@ -6,7 +6,7 @@ const boton = document.querySelector('#boton');
 boton.addEventListener('click', enviar = () => {
     resPaquetes = parseFloat(paquetes.value);
     resTipo = tipo.value;
-    if (resTipo == 'sal' || resTipo == 'azucar' || resTipo == 'Sal' || resTipo == 'Azucar' || resTipo == 1 || resTipo == 2) {
+    if (resTipo == 'sal' || resTipo == 'azucar' || resTipo == 'Sal' || resTipo == 'Azucar' || resTipo == 1 || resTipo == 2 || resTipo == 'azúcar' || resTipo == 'Azúcar') {
         if (resPaquetes > 0) {
             todo('maiz', 35, 60, 'results-one');
             todo('mantequilla', 2.5, 60, 'results-two');
